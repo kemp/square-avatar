@@ -9,6 +9,10 @@
     "require": {
         "php": ">=7.1.0"
     },
+    "require-dev": {
+        "laravel/framework": "^7.0|^8.0",
+        "laravel/nova": "*"
+    },
     "autoload": {
         "psr-4": {
             "Kemp\\SquareAvatar\\": "src/"
@@ -24,6 +28,12 @@
     "config": {
         "sort-packages": true
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./nova"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }

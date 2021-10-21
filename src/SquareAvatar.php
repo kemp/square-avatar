@@ -31,7 +31,7 @@ class SquareAvatar extends Avatar
             $file = $request->file($requestAttribute);
 
             $img = Image::make($file);
-            $img->orient();
+            $img->orientate();
             $img->fit($this->maxWidth);
             $img->save();
 
